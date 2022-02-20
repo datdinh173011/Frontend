@@ -54,6 +54,22 @@
     </aside>
     <!-- Main Content -->
     <main class="app-content">
+        <button onclick="document.getElementById('id01').style.display='block'" style="width: auto; margin-left: 80%; background-color: white; margin-top: 4%;">Add New Device</button>
+
+        <div id="id01" class="modal">
+            <form class="modal-content animate" action="" method="post">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none' " class="close" title="Close Modal">&times;</span>
+                </div>
+
+                <div class="container">
+                    <label for="uname"><b>Name</b></label>
+                    <input type="text" placeholder="Enter Name" name="uname" required>
+
+                    <button type="submit">Add New</button>
+                </div>
+            </form>
+        </div>
 
         <div class="wrapper">
             <table>
@@ -71,7 +87,7 @@
                 </tbody>
             </table>
         </div>
-        </div>
+
 
         <canvas id="myChart" style="width: 100%;max-width: 600px;margin-left: 570px;"></canvas>
 
